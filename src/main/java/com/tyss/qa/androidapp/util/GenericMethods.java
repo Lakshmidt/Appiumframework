@@ -149,6 +149,7 @@ public class GenericMethods extends Base{
 	{
 		Dimension d = driver.manage().window().getSize();
 		driver.swipe(d.width*startX, d.height*startY, d.width*endX, d.height*startY, duration);
+	
 	}
 	
 	public static boolean isAppInstalled(AndroidDriver driver,String appPackage)

@@ -4,6 +4,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.tyss.qa.androidapp.library.ListenersLib;
+import com.tyss.qa.androidapp.pages.HomePage;
 import com.tyss.qa.androidapp.util.Base;
 
 @Listeners(ListenersLib.class)
@@ -12,6 +13,7 @@ public class Zomatolauch extends Base {
 	@Test
 	public void launch() throws InterruptedException
 	{
+		HomePage hpage=new HomePage(driver);
 		Thread.sleep(5000);
 		hpage.clickonLocation();
 		Thread.sleep(5000);

@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.androidframework.WebApp">
+      <class name="com.androidframework.SetAlarm">
         <methods>
-          <include name="webAppTest"/>
+          <include name="alarm"/>
+          <include name="desiredcap"/>
         </methods>
-      </class> <!-- com.androidframework.WebApp -->
+      </class> <!-- com.androidframework.SetAlarm -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

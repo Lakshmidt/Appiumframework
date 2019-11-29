@@ -32,6 +32,7 @@ public class Excelreport {
 			c=r.createCell(cell);
 			c.setCellValue(value);	
 		}	
+		
 		FileOutputStream fo=new FileOutputStream(filepath);
 		w.write(fo);
 		fo.flush();
