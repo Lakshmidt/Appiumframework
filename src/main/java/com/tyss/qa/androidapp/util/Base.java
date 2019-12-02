@@ -36,7 +36,8 @@ public class Base extends GlobalVariables{
 	
 	public void init() throws FileNotFoundException, IOException
 	{
-		capability.load(new FileInputStream("C:\\Users\\TYSS\\Desktop\\appium\\AndroidFramework\\src\\main\\resources\\Capability.properties"));
-		elements.load(new FileInputStream("C:\\Users\\TYSS\\Desktop\\appium\\AndroidFramework\\src\\main\\resources\\Elements.properties"));
+		String currentdir=System.getProperty("user.dir");
+		capability.load(new FileInputStream(currentdir+"\\Capability.properties"));
+		elements.load(new FileInputStream(currentdir+"\\Elements.properties"));
 	}
 }
