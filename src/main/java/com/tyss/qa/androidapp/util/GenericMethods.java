@@ -151,10 +151,15 @@ public class GenericMethods extends Base{
 		driver.swipe(d.width*startX, d.height*startY, d.width*endX, d.height*startY, duration);
 	
 	}
-	
 	public static boolean isAppInstalled(AndroidDriver driver,String appPackage)
 	{
 		return driver.isAppInstalled(appPackage);
+	}
+	public static void tapbyCooridinates(AndroidDriver driver,int x,int y)
+	{
+		
+		driver.tap(1, x, y, 1000);
+		
 	}
 	
 }
